@@ -11,7 +11,8 @@
 	"minimum-stability": "dev",
 	"prefer-stable": true,
 	"require": {
-		"php": "^8.4"
+		"php": "^8.4",
+		"stefna/ds-collection": "^1.2"
 	},
 	"require-dev": {
 		"stefna/codestyle": "^1.19",
