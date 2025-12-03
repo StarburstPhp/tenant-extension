@@ -7,7 +7,7 @@ interface ConfigurableTenantService
 	/**
 	 * @template T
 	 * @param class-string<T> $name
-	 * @param ServiceFactory<T> $factory
+	 * @param ServiceFactory<T>|class-string<ServiceFactory<T>> $factory
 	 */
-	public function addServiceFactory(string $name, ServiceFactory $factory): void;
+	public function addServiceFactory(string $name, ServiceFactory|string $factory): void;
 }
