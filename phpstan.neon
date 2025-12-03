@@ -1,0 +1,7 @@
+parameters:
+    level: max
+    bootstrapFiles:
+        - vendor/autoload.php
+    paths:
+        - src/
+    checkMissingCallableSignature: true

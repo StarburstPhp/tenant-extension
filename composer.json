@@ -1,0 +1,36 @@
+{
+	"name": "starburst/tenant-extension",
+	"type": "library",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Andreas Sundqvist",
+			"email": "andreas@stefna.is"
+		}
+	],
+	"minimum-stability": "dev",
+	"prefer-stable": true,
+	"require": {
+		"php": "^8.4"
+	},
+	"require-dev": {
+		"stefna/codestyle": "^1.19",
+		"phpstan/phpstan": "^2.1.31",
+		"stefna/open-api-bundler": "^1.7.0",
+		"starburst/aws-authorizer": "2.x-dev",
+		"starburst/contract": "^1.18",
+		"starburst/http-adr": "^1.8",
+		"phpstan/extension-installer": "^1.4.3",
+		"bnf/phpstan-psr-container": "^1.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"Starburst\\Tenants\\": "src/"
+		}
+	},
+	"config": {
+		"allow-plugins": {
+			"phpstan/extension-installer": true
+		}
+	}
+}
