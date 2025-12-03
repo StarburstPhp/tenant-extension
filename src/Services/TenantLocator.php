@@ -2,6 +2,7 @@
 
 namespace Starburst\Extensions\Tenants\Services;
 
+use Starburst\Extensions\ApiTenant\Exceptions\TenantNotConfigured;
 use Starburst\Extensions\Tenants\Entities\Tenant;
 use Stefna\Collection\ListCollection;
 
@@ -12,5 +13,8 @@ interface TenantLocator
 	 */
 	public function getAllTenants(): ListCollection;
 
+	/**
+	 * @throws TenantNotConfigured
+	 */
 	public function getCurrentTenant(): Tenant;
 }
