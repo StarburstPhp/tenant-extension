@@ -10,7 +10,7 @@ interface TenantLocator
 	/**
 	 * @return ListCollection<Tenant>
 	 */
-	public function getAllTenants(): array;
+	public function getAllTenants(): ListCollection;
 
 	public function getCurrentTenant(): Tenant;
 }
