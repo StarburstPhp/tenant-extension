@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace Starburst\Tenants\Services;
+namespace Starburst\Extensions\Tenants\Services;
 
-use Starburst\Tenants\Entities\Tenant;
-use Starburst\Tenants\Values\TenantId;
+use Starburst\Extensions\Tenants\Entities\Tenant;
+use Starburst\Extensions\Tenants\Values\TenantId;
 
 interface TenantService extends TenantLocator
 {

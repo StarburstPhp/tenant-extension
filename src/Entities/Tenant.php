@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace Starburst\Tenants\Entities;
+namespace Starburst\Extensions\Tenants\Entities;
 
-use Starburst\Tenants\Values\TenantId;
+use Starburst\Extensions\Tenants\Values\TenantId;
 
 interface Tenant
 {

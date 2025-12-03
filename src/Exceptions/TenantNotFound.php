@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace Starburst\Tenants\Exceptions;
+namespace Starburst\Extensions\Tenants\Exceptions;
 
-use Starburst\Tenants\Values\TenantId;
+use Starburst\Extensions\Tenants\Values\TenantId;
 
 final class TenantNotFound extends \RuntimeException
 {

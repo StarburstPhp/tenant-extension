@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace Starburst\Tenants\Events;
+namespace Starburst\Extensions\Tenants\Events;
 
-use Starburst\Tenants\Entities\Tenant;
+use Starburst\Extensions\Tenants\Entities\Tenant;
 
 final readonly class TenantUnLoaded
 {

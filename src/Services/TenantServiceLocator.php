@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Starburst\Tenants\Services;
+namespace Starburst\Extensions\Tenants\Services;
 
 interface TenantServiceLocator
 {
