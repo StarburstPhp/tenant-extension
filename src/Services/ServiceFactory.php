@@ -5,7 +5,7 @@ namespace Starburst\Tenants\Services;
 use Stefna\Config\Config;
 
 /**
- * @template T
+ * @template T of object
  */
 interface ServiceFactory
 {
@@ -13,7 +13,10 @@ interface ServiceFactory
 	 * @param class-string<T> $class
 	 * @return T
 	 */
-	public function create(string $class, mixed ...$args);
+	public function create(string $class): object;
 
-	public function reload(Config $config): void;
+	/**
+	 * @return static<T>
+	 */
+	public function withConfig(Config $config): static;
 }
