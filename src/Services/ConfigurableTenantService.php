@@ -5,7 +5,7 @@ namespace Starburst\Extensions\Tenants\Services;
 interface ConfigurableTenantService
 {
 	/**
-	 * @template T
+	 * @template T of object
 	 * @param class-string<T> $name
 	 * @param ServiceFactory<T>|class-string<ServiceFactory<T>> $factory
 	 */
