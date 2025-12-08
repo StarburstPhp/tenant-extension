@@ -12,7 +12,7 @@ interface TenantService extends TenantLocator
 	/**
 	 * @throws TenantNotFound
 	 */
-	public function configureTenant(Tenant|TenantId $tenant): Tenant;
+	public function configureCurrentTenant(Tenant|TenantId $tenant): Tenant;
 
 	/**
 	 * @throws InvalidTenantId
