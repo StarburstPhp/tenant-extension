@@ -11,9 +11,23 @@ use Starburst\Extensions\Tenants\Values\TenantId;
 interface TenantService extends TenantLocator
 {
 	/**
+	 * Configures the current tenant
+	 *
+	 * Will dispatch TenantLoaded/TenantUnLoaded events and set the current tenant
+	 *
 	 * @throws TenantNotFound
 	 */
 	public function configureCurrentTenant(Tenant|TenantId $tenant): Tenant;
+
+	/**
+	 * Configures a tenant
+	 *
+	 * Returns a service locator configured with this tenant
+	 * Will not dispatch any TenantLoaded events or set it as the current tenant
+	 *
+	 * @throws TenantNotFound
+	 */
+	public function configureTenant(Tenant|TenantId $tenant): TenantServiceLocator;
 
 	/**
 	 * @throws InvalidTenantId
