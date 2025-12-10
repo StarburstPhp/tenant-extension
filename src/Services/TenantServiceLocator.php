@@ -2,6 +2,8 @@
 
 namespace Starburst\Extensions\Tenants\Services;
 
+use Starburst\Extensions\Tenants\Entities\Tenant;
+
 interface TenantServiceLocator
 {
 	/**
@@ -10,4 +12,6 @@ interface TenantServiceLocator
 	 * @return C
 	 */
 	public function get(string $service): object;
+
+	public function getCurrentTenant(): Tenant;
 }
